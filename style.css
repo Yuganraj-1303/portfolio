@@ -1,0 +1,416 @@
+ body {
+   margin: 0;
+   font-family: 'Poppins', sans-serif;
+   background: radial-gradient(circle at center, #7b001c, #1a0006);
+ }
+
+ * {
+   text-transform: capitalize;
+ }
+
+
+ section {
+   height: 100vh;
+ }
+
+
+ .orbit {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 100%;
+   height: 100%;
+   transform: translate(-50%, -50%);
+   animation: rotateOrbit 15s linear infinite;
+ }
+
+ .skill-icon {
+   position: absolute;
+   top: 45%;
+   left: 45%;
+   font-size: 25px;
+
+ }
+
+
+ .skill-icon:nth-child(1) {
+   transform: rotate(0deg) translate(100px)
+ }
+
+ .skill-icon:nth-child(2) {
+   transform: rotate(60deg) translate(100px)
+ }
+
+ .skill-icon:nth-child(3) {
+   transform: rotate(120deg) translate(100px)
+ }
+
+ .skill-icon:nth-child(4) {
+   transform: rotate(180deg) translate(100px)
+ }
+
+ .skill-icon:nth-child(5) {
+   transform: rotate(240deg) translate(100px)
+ }
+
+ .skill-icon:nth-child(6) {
+   transform: rotate(300deg) translate(100px)
+ }
+
+ @keyframes rotateOrbit {
+   from {
+     transform: translate(-50%, -50%) rotate(0deg);
+   }
+
+   to {
+     transform: translate(-50%, -50%) rotate(360deg);
+   }
+ }
+  
+   
+ 
+
+
+ .glass-card {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(20px);
+   border-radius: 20px;
+   box-shadow: 0 0 40px rgba(255, 0, 70, 0.2);
+ }
+
+
+ .ui-card {
+   background: linear-gradient(145deg, #2b0010, #1a0008);
+   border-radius: 20px;
+   box-shadow: 0 0 30px rgba(255, 0, 90, 0.3);
+ }
+
+
+ .circle-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .circle {
+   width: 180px;
+   height: 180px;
+   border-radius: 50%;
+   background: radial-gradient(circle, #ff003c, #5a0015);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-weight: 600;
+   letter-spacing: 3px;
+   box-shadow: 0 0 40px rgba(255, 0, 70, 0.6);
+   position: relative;
+ }
+
+ .circle::before {
+   content: "";
+   position: absolute;
+   width: 220px;
+   height: 220px;
+   border: 1px solid rgba(255, 0, 70, 0.3);
+   border-radius: 50%;
+ }
+
+ .btn-danger {
+   background: linear-gradient(45deg, #ff003c, #ff4d6d);
+   border: none;
+ }
+
+ .btn-danger:hover {
+   opacity: 0.9;
+ }
+
+
+ #education {
+   background: radial-gradient(circle at center, #6a0018, #1a0006);
+ }
+
+
+ .projects-section {
+   background: radial-gradient(circle at center, #7b001c, #1a0006);
+
+
+ }
+
+ .project-card {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(20px);
+   border-radius: 20px;
+   padding: 20px;
+   transition: 0.4s ease;
+   box-shadow: 0 0 25px rgba(255, 0, 90, 0.2);
+ }
+
+ .project-card:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 0 40px rgba(255, 0, 90, 0.5);
+ }
+
+
+ .tech-tags span {
+   display: inline-block;
+   font-size: 12px;
+   padding: 5px 10px;
+   margin: 5px 5px 0 0;
+   border-radius: 20px;
+   background: rgba(255, 0, 60, 0.2);
+   color: #ff4d6d;
+ }
+
+
+
+
+ .skills-section {
+   background: radial-gradient(circle at center, #6a0018, #1a0006);
+ }
+
+ .skill-card {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(15px);
+   padding: 20px;
+   border-radius: 15px;
+   box-shadow: 0 0 20px rgba(255, 0, 80, 0.2);
+   transition: 0.3s;
+ }
+
+ .skill-card:hover {
+   box-shadow: 0 0 35px rgba(255, 0, 80, 0.4);
+ }
+
+ .custom-progress {
+   height: 8px;
+   background-color: rgba(255, 255, 255, 0.1);
+   border-radius: 20px;
+ }
+
+ .progress-bar {
+   border-radius: 20px;
+   box-shadow: 0 0 10px rgba(255, 0, 60, 0.8);
+   animation: loadBar 6s ease-in-out;
+   animation-iteration-count: 10;
+ }
+
+ @keyframes loadBar {
+   from {
+     width: 0;
+   }
+ }
+
+
+
+
+ .contact-card {
+   background: rgba(255, 255, 255, 0.05);
+   backdrop-filter: blur(20px);
+   border-radius: 20px;
+   padding: 30px;
+   box-shadow: 0 0 35px rgba(255, 0, 80, 0.3);
+ }
+
+ .custom-input {
+   background: rgba(220, 209, 209, 0.5);
+   border: 1px solid rgba(255, 0, 60, 0.3);
+   color: white;
+ }
+
+ .custom-input:focus {
+   background: rgba(0, 0, 0, 0.7);
+   border-color: #ff003c;
+   box-shadow: 0 0 10px #ff003c;
+   color: white;
+ }
+
+
+
+ .social-icon a {
+
+   padding: 0.5rem;
+   width: 4rem;
+   height: 4rem;
+   color: #7cf03d;
+   margin: 0 1rem;
+   text-decoration: none;
+   border-radius: 50%;
+   border: 2px solid greenyellow;
+   background-color: rgba(102, 101, 101, 0.351);
+
+ }
+
+ .social-icon a:hover {
+   color: rgb(15, 13, 129);
+
+ }
+
+ ul li a i {
+   margin-right: 8px;
+   background-color: #f4f0f1;
+   color: #2bb840;
+   border-radius: 100px;
+   border: 2px solid greenyellow;
+   padding: 5px;
+
+ }
+
+ li {
+   margin-right: 25px;
+ }
+
+ .typing h3::after {
+   content: "";
+   padding: 5px;
+   color: white;
+   animation: mango 4s infinite;
+   border-right: 2px;
+   border-color: #f4f0f1;
+   border-style: solid;
+   border-bottom: none;
+   border-left: none;
+   border-top: none;
+
+ }
+
+ @keyframes mango {
+   0% {
+     content: "Web developer";
+   }
+
+   41% {
+     content: "Fontend developer";
+     color: blue;
+     border-color: rgba(236, 236, 243, 0.1);
+
+
+   }
+
+   60% {
+     content: "Backend developer";
+     color: cyan;
+
+     border-color: rgba(236, 236, 243, 0.7);
+   }
+
+   100% {
+     content: "Data base managment";
+     color: rgb(24, 171, 153);
+
+     border-color: rgba(208, 208, 213, 0.1);
+   }
+ }
+
+ .edu-img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   animation: borderPulse 3s infinite alternate;
+ }
+
+ @keyframes borderPulse {
+   0% {
+     filter: hue-rotate(90deg);
+
+   }
+
+   50% {
+
+     filter: grayscale(10%);
+
+
+   }
+
+   100% {
+     filter: sepia(50%);
+
+   }
+ }
+
+
+ .edu-img:hover {
+
+   transform: perspective(500px) rotateY(45deg);
+ }
+
+ .max {
+   color: whitesmoke;
+ }
+
+ .autoshow {
+   animation: text-appear both;
+   animation-timeline: view();
+   animation-range: entry 40% cover 100vh;
+ }
+
+ @keyframes text-appear {
+   from {
+     opacity: 0;
+     transform: translateY(100px);
+   }
+ }
+
+ to {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .edu-img {
+   width: 25%;
+   height: auto;
+ }
+
+ .row.g-3.text-center {
+   align-items: center;
+   justify-content: center;
+ }
+
+ .autoBlue {
+   animation: key 3s linear both;
+   animation-timeline: view(80% auto);
+ }
+
+ @keyframes key {
+   0% {
+     filter: blur(0px);
+   }
+
+   30% {
+     filter: blur(30px);
+   }
+
+   70% {
+     filter: blur(30px);
+   }
+
+   100% {
+     filter: blur(0px);
+   }
+ }
+
+ h6 i {
+   border: 2px solid white;
+   padding: 0.5rem;
+   border-radius: 50%;
+ }
+
+ ul a:hover {
+   background-color: black;
+   color: whitesmoke;
+   border-radius: 30px;
+   transition: background-color 1s;
+   transition: color 1s;
+ }
+
+ .hero-section{
+  animation: design 5s 4 ;
+ }
+ @keyframes design {
+  0%,50%{
+    opacity: 0.1;
+  }
+  50%,100%{
+    opacity: 0.9;
+  }
+  
+ }
