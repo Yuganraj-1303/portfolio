@@ -395,12 +395,9 @@
  }
 
  ul a:hover {
-   background-color: black;
-   color: whitesmoke;
-   border-radius: 30px;
-   transition: background-color 1s;
-   transition: color 1s;
+   color: rgb(31, 34, 218);
  }
+  
 
  .hero-section{
   animation: design 5s 4 ;
